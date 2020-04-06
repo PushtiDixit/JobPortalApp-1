@@ -67,7 +67,7 @@ public class HaveAnAccount extends AppCompatActivity {
 
                 } else if (pwd.isEmpty()) {
                     password.setError("Please,Enter your password");
-                    password.requestFocus();//Focusiing on the same box    This is working
+                    password.requestFocus();//Focusiing on the same box    //This is working
 
                 }
                 else if (!(email.isEmpty() && pwd.isEmpty())) {
@@ -106,7 +106,7 @@ public class HaveAnAccount extends AppCompatActivity {
 
     public void onStart (int resultCode, Intent data) {
         super.onStart();
-        mFirebaseAuth.addAuthStateListener(mAuthStateListener);
+         mFirebaseAuth.addAuthStateListener(mAuthStateListener);
 //To check if the user is checked in
         //You can add update UI later.
     }
