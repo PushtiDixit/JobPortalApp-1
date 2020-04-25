@@ -1,58 +1,21 @@
 {
   "project_info": {
-    "project_number": "1048347036778",
-    "firebase_url": "https://jobportal-6f08f.firebaseio.com",
-    "project_id": "jobportal-6f08f",
-    "storage_bucket": "jobportal-6f08f.appspot.com"
+    "project_number": "1009261873741",
+    "firebase_url": "https://jobportal1-b4e5f.firebaseio.com",
+    "project_id": "jobportal1-b4e5f",
+    "storage_bucket": "jobportal1-b4e5f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1048347036778:android:c8fd9956ecb48b461a8e13",
-        "android_client_info": {
-          "package_name": "com.example.android.jobportal"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1048347036778-q371jtgqimngd9mr29rjsth707oek2sp.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.android.jobportal",
-            "certificate_hash": "6e57af966fcb402f81d7fef77d3b819af77e3ae8"
-          }
-        },
-        {
-          "client_id": "1048347036778-3r6nqj7k97etvaq1snokqlumblo3cecv.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAxtjNBNJbpt5tXrVhSJa2EFsIEID8nYh4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1048347036778-3r6nqj7k97etvaq1snokqlumblo3cecv.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1048347036778:android:ae45916f4d54fc211a8e13",
+        "mobilesdk_app_id": "1:1009261873741:android:a74fee447791cbc84eaa04",
         "android_client_info": {
           "package_name": "com.example.android.jobportal1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1048347036778-rlp4udt52uc7rsg7o90p5ce5uouks3cf.apps.googleusercontent.com",
+          "client_id": "1009261873741-a79i34oru61ebet6hq8mqh1cacnrop5n.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.android.jobportal1",
@@ -60,20 +23,20 @@
           }
         },
         {
-          "client_id": "1048347036778-3r6nqj7k97etvaq1snokqlumblo3cecv.apps.googleusercontent.com",
+          "client_id": "1009261873741-t4qu7brku55df1k8sf1g41eek0f3vbaf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAxtjNBNJbpt5tXrVhSJa2EFsIEID8nYh4"
+          "current_key": "AIzaSyCWS19Xl91m1GVuEzTMXukOucsKYrswH2g"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1048347036778-3r6nqj7k97etvaq1snokqlumblo3cecv.apps.googleusercontent.com",
+              "client_id": "1009261873741-t4qu7brku55df1k8sf1g41eek0f3vbaf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

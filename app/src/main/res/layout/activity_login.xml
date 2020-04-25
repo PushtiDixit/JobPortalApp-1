@@ -86,7 +86,7 @@
         android:autofillHints=""
         android:background="@android:color/white"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColor="#000000"
@@ -170,14 +170,14 @@
         android:textSize="18sp"
         android:textStyle="normal"
         android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonformain1"
+        app:layout_constraintBottom_toBottomOf="@+id/nextbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.74" />
 
     <Button
-        android:id="@+id/buttonformain1"
+        android:id="@+id/nextbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
