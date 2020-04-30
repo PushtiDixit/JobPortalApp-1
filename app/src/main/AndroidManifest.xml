@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmployeeHomepage"></activity>
+        <activity android:name=".companyhomepage"></activity>
+        <activity android:name=".EmployeeHomepage" />
         <activity android:name=".Homepage" />
         <activity android:name=".HaveAnAccount" />
         <activity
@@ -20,7 +21,6 @@
             android:parentActivityName=".MainActivity" />
         <activity android:name=".Login" />
         <activity android:name=".Employer" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

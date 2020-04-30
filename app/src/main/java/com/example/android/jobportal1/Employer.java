@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -25,6 +27,8 @@ public class Employer extends AppCompatActivity {
     private Spinner type;
     //create a firebase firestore reference
     private FirebaseFirestore fire;
+    private FirebaseUser firebaseref;
+    private String Userid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,8 @@ public class Employer extends AppCompatActivity {
         companyloc = (EditText) findViewById(R.id.editTextCompanyLoc);
         contact = (EditText) findViewById(R.id.contact);
         type = (Spinner) findViewById(R.id.spinnercompany);
+        firebaseref = FirebaseAuth.getInstance().getCurrentUser();
+        final String Userid=firebaseref.getUid();
         Button_to_login = (Button) findViewById(R.id.buttonforhaveacc);
 
         Spinner mySpinner = (Spinner) findViewById(R.id.spinnercompany);
@@ -54,13 +60,16 @@ public class Employer extends AppCompatActivity {
                 String comloc = companyloc.getText().toString();
                 String cno = contact.getText().toString();
                 String cotype = type.getSelectedItem().toString();
+                String Type="company";
                 if (!validateinputs(comname, comloc, cno, cotype)) {
                     Map<String, Object> companymap = new HashMap<>();
                     companymap.put("Comapny name", comname);
                     companymap.put("Comapny location", comloc);
                     companymap.put("Contact number", cno);
                     companymap.put("Company type", cotype);
-                    fire.collection("Company").add(companymap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    companymap.put("UID",Userid);
+                    companymap.put("type",Type);
+                    fire.collection("Users").add(companymap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
                             Toast.makeText(Employer.this, "Company details stored", Toast.LENGTH_SHORT);

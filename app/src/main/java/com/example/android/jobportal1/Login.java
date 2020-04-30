@@ -97,7 +97,7 @@ public class Login extends AppCompatActivity {
                     empmap.put("UID",Userid);
                     empmap.put("type",Type);
 
-                        db.collection("employee").add(empmap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        db.collection("Users").add(empmap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
                             Toast.makeText(Login.this,"Employee details stored",Toast.LENGTH_SHORT);
