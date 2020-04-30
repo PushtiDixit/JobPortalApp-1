@@ -118,6 +118,7 @@ public class HaveAnAccount extends AppCompatActivity {
                                                         Toast.makeText(HaveAnAccount.this, "Document success", Toast.LENGTH_LONG).show();//This also works
 
                                                         for (QueryDocumentSnapshot document : task.getResult()) {
+                                                            Log.i("LOOP","loop");
                                                             String type = document.getString("type");
                                                             if (type.equals("employee")) {
                                                                 Toast.makeText(HaveAnAccount.this, "Inside employee", Toast.LENGTH_LONG).show();

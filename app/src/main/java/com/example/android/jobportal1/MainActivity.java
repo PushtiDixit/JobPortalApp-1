@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
 
                                           } else if (email.isEmpty() && pwd.isEmpty()) {
                                               //A small message displayed on the screen
-                                              Toast.makeText(MainActivity.this, "Both fields are empty", Toast.LENGTH_SHORT);
+                                              Toast.makeText(MainActivity.this, "Both fields are empty", Toast.LENGTH_SHORT).show();
                                           } else if (!(email.isEmpty() && pwd.isEmpty())) {
                                               mFirebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                                                   @Override
                                                   public void onComplete(@NonNull Task<AuthResult> task) {
                                                       if (!task.isSuccessful()) {
-                                                          Toast.makeText(MainActivity.this, "Authentication Unsuccessful", Toast.LENGTH_SHORT);
+                                                          Toast.makeText(MainActivity.this, "Authentication Unsuccessful", Toast.LENGTH_SHORT).show();
                                                       } else {
                                                           Intent intent = new Intent(MainActivity.this, Main1.class);
                                                           startActivity(intent);
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                                                   }
                                               });
                                           } else {
-                                              Toast.makeText(MainActivity.this, "ERROR", Toast.LENGTH_SHORT);
+                                              Toast.makeText(MainActivity.this, "ERROR", Toast.LENGTH_SHORT).show();
                                           }
 
 

@@ -63,8 +63,8 @@ public class Employer extends AppCompatActivity {
                 String Type="company";
                 if (!validateinputs(comname, comloc, cno, cotype)) {
                     Map<String, Object> companymap = new HashMap<>();
-                    companymap.put("Comapny name", comname);
-                    companymap.put("Comapny location", comloc);
+                    companymap.put("Company name", comname);
+                    companymap.put("Company location", comloc);
                     companymap.put("Contact number", cno);
                     companymap.put("Company type", cotype);
                     companymap.put("UID",Userid);
