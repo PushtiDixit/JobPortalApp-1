@@ -100,14 +100,14 @@ public class Login extends AppCompatActivity {
                         db.collection("Users").add(empmap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
-                            Toast.makeText(Login.this,"Employee details stored",Toast.LENGTH_SHORT);
+                            Toast.makeText(Login.this,"Employee details stored",Toast.LENGTH_SHORT).show();
                             Intent i1=new Intent(Login.this,HaveAnAccount.class);
                             startActivity(i1);
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(Login.this,e.getMessage(),Toast.LENGTH_SHORT);
+                            Toast.makeText(Login.this,e.getMessage(),Toast.LENGTH_SHORT).show();
                         }
 
                     });

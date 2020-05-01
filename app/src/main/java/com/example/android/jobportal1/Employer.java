@@ -72,14 +72,14 @@ public class Employer extends AppCompatActivity {
                     fire.collection("Users").add(companymap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
-                            Toast.makeText(Employer.this, "Company details stored", Toast.LENGTH_SHORT);
-                            Intent intentacc = new Intent(Employer.this, HaveAnAccount.class);
-                            startActivity(intentacc);
+                            Toast.makeText(Employer.this, "Company details stored", Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(Employer.this,HaveAnAccount.class);
+                            startActivity(i);
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(Employer.this, e.getMessage(), Toast.LENGTH_SHORT);
+                            Toast.makeText(Employer.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
 
@@ -89,19 +89,19 @@ public class Employer extends AppCompatActivity {
             private boolean validateinputs(String name,String loc,String no,String comtype){
                 if(name.isEmpty())
                 {
-                    companyname.setError("Enter your name");
+                    companyname.setError("Enter Company name");
                     companyname.requestFocus();
                     return true;
                 }
                 else if(loc.isEmpty())
                 {
-                    companyloc.setError("Enter your email");
+                    companyloc.setError("Enter Company Location");
                     companyloc.requestFocus();
                     return true;
                 }
                 else if(no.isEmpty())
                 {
-                    contact.setError("Please select your date of birth");
+                    contact.setError("Enter company phone details");
                     contact.requestFocus();
                     return true;
                 }

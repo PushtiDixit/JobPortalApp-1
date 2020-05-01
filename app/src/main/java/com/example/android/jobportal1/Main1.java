@@ -45,14 +45,14 @@ public class Main1 extends AppCompatActivity {
     }
     public void openActivityLogin()
     {
-        Intent intent=new Intent(this,Login.class);
+        Intent intent=new Intent(Main1.this,Login.class);
 
         startActivity(intent);
     }
 
     public void openActivityEmployer()
     {
-        Intent intent1=new Intent(this,Employer.class);
+        Intent intent1=new Intent(Main1.this,Employer.class);
         startActivity(intent1);
     }
 
